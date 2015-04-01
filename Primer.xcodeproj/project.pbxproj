@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6182CFF1ACB6E1100E66A31 /* PrimeNumberGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6182CFE1ACB6E1100E66A31 /* PrimeNumberGeneratorTests.swift */; };
 		C625ED591ACB5E5500666F13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C625ED581ACB5E5500666F13 /* AppDelegate.swift */; };
 		C625ED5B1ACB5E5500666F13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C625ED5A1ACB5E5500666F13 /* ViewController.swift */; };
 		C625ED5E1ACB5E5500666F13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C625ED5C1ACB5E5500666F13 /* Main.storyboard */; };
 		C625ED601ACB5E5500666F13 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C625ED5F1ACB5E5500666F13 /* Images.xcassets */; };
 		C625ED631ACB5E5500666F13 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C625ED611ACB5E5500666F13 /* LaunchScreen.xib */; };
-		C625ED6F1ACB5E5500666F13 /* PrimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C625ED6E1ACB5E5500666F13 /* PrimerTests.swift */; };
+		C625ED791ACB5E6D00666F13 /* PrimeNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C625ED781ACB5E6D00666F13 /* PrimeNumberGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C6182CFE1ACB6E1100E66A31 /* PrimeNumberGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeNumberGeneratorTests.swift; sourceTree = "<group>"; };
 		C625ED531ACB5E5500666F13 /* Primer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Primer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C625ED571ACB5E5500666F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C625ED581ACB5E5500666F13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +37,7 @@
 		C625ED621ACB5E5500666F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C625ED681ACB5E5500666F13 /* PrimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C625ED6D1ACB5E5500666F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C625ED6E1ACB5E5500666F13 /* PrimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerTests.swift; sourceTree = "<group>"; };
+		C625ED781ACB5E6D00666F13 /* PrimeNumberGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeNumberGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				C625ED581ACB5E5500666F13 /* AppDelegate.swift */,
 				C625ED5A1ACB5E5500666F13 /* ViewController.swift */,
+				C625ED781ACB5E6D00666F13 /* PrimeNumberGenerator.swift */,
 				C625ED5C1ACB5E5500666F13 /* Main.storyboard */,
 				C625ED5F1ACB5E5500666F13 /* Images.xcassets */,
 				C625ED611ACB5E5500666F13 /* LaunchScreen.xib */,
@@ -98,8 +101,8 @@
 		C625ED6B1ACB5E5500666F13 /* PrimerTests */ = {
 			isa = PBXGroup;
 			children = (
-				C625ED6E1ACB5E5500666F13 /* PrimerTests.swift */,
 				C625ED6C1ACB5E5500666F13 /* Supporting Files */,
+				C6182CFE1ACB6E1100E66A31 /* PrimeNumberGeneratorTests.swift */,
 			);
 			path = PrimerTests;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C625ED791ACB5E6D00666F13 /* PrimeNumberGenerator.swift in Sources */,
 				C625ED5B1ACB5E5500666F13 /* ViewController.swift in Sources */,
 				C625ED591ACB5E5500666F13 /* AppDelegate.swift in Sources */,
 			);
@@ -221,7 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C625ED6F1ACB5E5500666F13 /* PrimerTests.swift in Sources */,
+				C6182CFF1ACB6E1100E66A31 /* PrimeNumberGeneratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -371,6 +376,7 @@
 				INFOPLIST_FILE = PrimerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Primer.app/Primer";
 			};
 			name = Debug;
@@ -379,6 +385,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -409,6 +416,7 @@
 				C625ED741ACB5E5500666F13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C625ED751ACB5E5500666F13 /* Build configuration list for PBXNativeTarget "PrimerTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +425,7 @@
 				C625ED771ACB5E5500666F13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
